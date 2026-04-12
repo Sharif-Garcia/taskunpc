@@ -1,13 +1,6 @@
 function TareaCard({ titulo, materia, fecha, completada }) {
   return (
-    <div
-      style={{
-        border: "1px solid #ccc",
-        padding: "10px",
-        marginBottom: "10px",
-        borderRadius: "8px",
-      }}
-    >
+    <div className={`tarea-card ${completada ? "completada" : "pendiente"}`}>
       <h3>{titulo}</h3>
       <p>
         <strong>Materia:</strong> {materia}
